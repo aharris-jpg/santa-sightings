@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Top 10 Canadian Provinces & Territories to Spot Santa on Christmas Eve</title>
+</head>
+
+<body style="margin:0;">
+
+<section class="csb-santa-embed" role="region" aria-labelledby="csb-santa-title"
+  style="max-width:860px;margin:16px auto;font:14px/1.35 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+         color:#1b1d23;background:#ffffff;border:1px solid #E4ECF4;border-radius:12px;
+         box-shadow:0 1px 2px rgba(0,0,0,.04),0 6px 16px rgba(199,30,52,.15);">
+
+  <style>
+    /* ==== Scoped styles for the Santa table ========================= */
+    section.csb-santa-embed, section.csb-santa-embed * {
+      box-sizing: border-box;
+      font-family: inherit;
+      color: inherit;
+    }
+    section.csb-santa-embed { color-scheme: light; }
+
+    .csb-santa-embed {
+      --red-900:#7B1221;
+      --red-700:#C71E34;
+      --red-500:#E23D4C;
+      --green-800:#0F3B33;
+      --green-500:#00A676;
+      --gold:#F8C545;
+      --snow:#F7FBFF;
+      --border:#E4ECF4;
+      --muted:#6E7480;
+    }
+
+    .csb-santa-embed .head{
+      padding:14px 16px;border-bottom:1px solid var(--border)!important;color:#fff!important;
+      background:
+        radial-gradient(140% 160% at 90% 0%, rgba(255,255,255,.18) 0%, transparent 55%),
+        linear-gradient(120deg,var(--red-900) 0%,var(--red-700) 40%,var(--green-500) 100%)!important;
+      position:relative;
+      overflow:hidden;
+    }
+    .csb-santa-embed .head::after{
+      content:"★";position:absolute;right:22px;top:12px;
+      font-size:26px;color:rgba(255,255,255,.9);text-shadow:0 0 10px rgba(0,0,0,.25);
+    }
+    .csb-santa-embed .title{
+      margin:0 0 2px;
+      font-size:clamp(16px,2.2vw,20px);
+      line-height:1.2;
+      font-weight:800;
+      letter-spacing:0.02em;
+      color:#fff!important;
+    }
+    .csb-santa-embed .sub{
+      margin:0;
+      color:rgba(255,255,255,.92)!important;
+      font-size:12px;
+    }
+    .csb-santa-embed .meta{
+      margin:4px 0 0;
+      color:rgba(255,255,255,.85)!important;
+      font-size:12px;
+    }
+
+    .csb-santa-embed .table{
+      padding:10px 12px;
+      max-height:min(72vh,640px);
+      overflow:auto;
+      -webkit-overflow-scrolling:touch;
+      scrollbar-gutter:stable;
+    }
+    .csb-santa-embed .table::-webkit-scrollbar{ width:8px; height:8px }
+    .csb-santa-embed .table::-webkit-scrollbar-track{ background:var(--snow); border-radius:999px }
+    .csb-santa-embed .table::-webkit-scrollbar-thumb{
+      background:linear-gradient(180deg,var(--red-700),var(--green-500));
+      border-radius:999px;border:2px solid #fff;
+    }
+
+    .csb-santa-embed .row{
+      display:grid;
+      grid-template-columns:40px minmax(0,1.2fr) minmax(0,1fr);
+      gap:8px;
+      align-items:center;
+      margin:6px 0;
+      border:1px solid var(--border)!important;
+      border-radius:12px;
+      padding:8px 10px;
+      background:#fff!important;
+      transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease,background-color .16s ease;
+      transform-origin:center;
+    }
+    .csb-santa-embed .row:hover{
+      background:linear-gradient(0deg,rgba(226,61,76,.06),rgba(226,61,76,.06)),#fff!important;
+      border-color:#F2D4DA!important;
+      box-shadow:0 8px 20px rgba(199,30,52,.18);
+      transform:translateY(-1px);
+    }
+
+    @media (max-width:640px){
+      .csb-santa-embed .row{
+        grid-template-columns:32px minmax(0,1fr);
+      }
+      .csb-santa-embed .metric{
+        grid-column:1 / -1;
+      }
+    }
+
+    .csb-santa-embed .rank{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      font-variant-numeric:tabular-nums;
+      color:var(--muted);
+    }
+    .csb-santa-embed .rank span{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:26px;height:26px;
+      border-radius:999px;
+      background:var(--snow);
+      border:1px solid var(--border);
+    }
+    .csb-santa-embed .row[data-rank="1"] .rank span{
+      background:radial-gradient(circle at 30% 25%,#fff 0%,#FCE79A 40%,#F4C53C 100%);
+      border-color:#E1B534;
+      color:#5A3800;
+    }
+
+    .csb-santa-embed .state{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+    }
+    .csb-santa-embed .state-main{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-weight:700;
+      color:#111827;
+    }
+    .csb-santa-embed .state-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:4px;
+      padding:2px 7px;
+      border-radius:999px;
+      font-size:11px;
+      background:rgba(15,59,51,.05);
+      color:var(--green-800);
+    }
+    .csb-santa-embed .state-pill::before{
+      content:"🎄";
+      font-size:11px;
+    }
+    .csb-santa-embed .state-city{
+      font-size:11px;
+      color:var(--muted);
+    }
+
+    .csb-santa-embed .metric{
+      position:relative;
+      height:30px;
+      border-radius:999px;
+      background:rgba(199,30,52,.06)!important;
+      overflow:hidden;
+      padding-right:120px;
+    }
+    .csb-santa-embed .bar{
+      position:absolute;
+      inset:0 auto 0 0;
+      border-radius:999px;
+      background:linear-gradient(90deg,var(--green-800),var(--green-500))!important;
+      box-shadow:inset 0 0 0 1px rgba(0,0,0,.03);
+    }
+    .csb-santa-embed .metric-inner{
+      position:absolute;
+      inset:0 8px 0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:6px;
+      font-variant-numeric:tabular-nums;
+      font-size:12px;
+    }
+    .csb-santa-embed .chip{
+      padding:3px 8px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid #E5E7EB;
+      white-space:nowrap;
+    }
+    .csb-santa-embed .chip.prob{
+      font-weight:700;
+      color:var(--green-800);
+    }
+    .csb-santa-embed .chip.odds{
+      color:var(--muted);
+      font-size:11px;
+    }
+
+    /* Footer + embed button */
+    .csb-santa-embed .csb-footer{
+      display:block!important;
+      text-align:center;
+      padding:6px 0;
+      border-top:1px solid var(--border);
+      background:
+        radial-gradient(160% 180% at 90% 0%, rgba(255,255,255,.16) 0%, transparent 55%),
+        linear-gradient(120deg,var(--green-800) 0%,var(--green-500) 50%,var(--red-700) 100%)!important;
+      color:#fff;
+      position:relative;
+      overflow:visible;
+    }
+    .csb-santa-embed .footer-inner{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:12px;
+      position:relative;
+      padding:0 10px;
+    }
+    .csb-santa-embed .embed-btn{
+      position:absolute;
+      left:14px;
+      background:#F8C545;
+      color:#3B1F00;
+      border:1px solid #E0AE32;
+      border-radius:8px;
+      padding:6px 14px;
+      font:13px/1.2 system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+      cursor:pointer;
+      transition:.2s ease;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+    }
+    .csb-santa-embed .embed-btn::before{
+      content:"</>";
+      font-size:12px;
+    }
+    .csb-santa-embed .embed-btn:hover{
+      background:#F4C23D;
+      border-color:#D09E24;
+    }
+    .csb-santa-embed .csb-footer img{
+      height:46px;
+      width:auto;
+      display:inline-block;
+      filter:drop-shadow(0 0 4px rgba(0,0,0,.35));
+    }
+
+    .csb-santa-embed .embed-wrapper{
+      position:absolute;
+      bottom:calc(100% + 10px);
+      left:50%;
+      transform:translateX(-50%);
+      width:min(600px, calc(100% - 24px));
+      display:none;
+      padding:16px 20px;
+      border:1px solid #D1D5DB;
+      border-radius:12px;
+      background:#fff;
+      color:#111;
+      box-shadow:0 12px 28px rgba(0,0,0,.18);
+      z-index:1000;
+    }
+    .csb-santa-embed .embed-wrapper::after{
+      content:"";
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:-8px;
+      border:8px solid transparent;
+      border-top-color:#fff;
+      filter:drop-shadow(0 1px 1px rgba(0,0,0,.08));
+    }
+    .csb-santa-embed .embed-wrapper textarea{
+      width:100%;
+      height:140px;
+      font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+      color:#111;
+      background:#F9FAFB;
+      padding:10px 12px;
+      border:1px solid #D1D5DB;
+      border-radius:8px;
+      resize:none;
+    }
+    .csb-santa-embed #copy-status{
+      display:none;
+      color:#047857;
+      font-size:13px;
+      margin-top:6px;
+    }
+
+    @media (max-width:640px){
+      .csb-santa-embed .embed-btn{
+        position:static;
+        font-size:12px;
+        padding:6px 10px;
+      }
+      .csb-santa-embed .footer-inner{
+        justify-content:space-between;
+      }
+      .csb-santa-embed .csb-footer img{
+        height:40px;
+      }
+      .csb-santa-embed .embed-wrapper{
+        width:calc(100% - 24px);
+      }
+    }
+  </style>
+
+  <div class="head">
+    <h3 id="csb-santa-title" class="title">Top 10 Canadian Provinces & Territories to Spot Santa on Christmas Eve</h3>
+    <p class="sub"><em>Ranked by a data-led Santa Sightings Score combining December sky darkness, rainy/snowy days, and local “Santa tracker” search activity.</em></p>
+    <p class="meta">Score converted into implied probability and American-style odds for a festive, odds-based look at your chances.</p>
+  </div>
+
+  <div class="table">
+    <!-- 1. Nunavut -->
+    <div class="row" data-rank="1">
+      <div class="rank"><span>1</span></div>
+      <div class="state">
+        <div class="state-main">
+          Nunavut
+          <span class="state-pill">Best odds in Iqaluit, NU</span>
+        </div>
+        <div class="state-city">Top city: Iqaluit — Santa Score 77.63</div>
+      </div>
+      <div class="metric">
+        <span class="bar" style="width:100%;"></span>
+        <div class="metric-inner">
+          <span class="chip prob">60.0% chance</span>
+          <span class="chip odds">Odds: -150</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Alberta -->
+    <div class="row" data-rank="2">
+      <div class="rank"><span>2</span></div>
+      <div class="state">
+        <div class="state-main">
+          Alberta
+          <span class="state-pill">Best odds in Lethbridge, AB</span>
+        </div>
+        <div class="state-city">Top city: Lethbridge — Santa Score 72.36</div>
+      </div>
+      <div class="metric">
+        <span class="bar" style="width:93.21%;"></span>
+        <div class="metric-inner">
+          <span class="chip prob">54.59% chance</span>
+          <span class="chip odds">Odds: -120</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Manitoba -->
+    <div class="row" data-rank="3">
+      <div class="rank"><span>3</span></div>
+      <div class="state">
+        <div class="state-main">
+          Manitoba
+          <span class="state-pill">Best odds in Brandon, MB</span>
+        </div>
+        <div class="state-city">Top city: Brandon — Santa Score 69.69</div>
+      </div>
+      <div class="metric">
+        <span class="bar" style="width:89.77%;"></span>
+        <div class="metric-inner">
+          <span class="chip prob">51.85% chance</span>
+          <span class="chip odds">Odds: -108</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Saskatchewan -->
+    <div class="row" data-rank="4">
+      <div class="rank"><span>4</span></div>
+      <div class="state">
+        <div class="state-main">
+          Saskatchewan
+          <span class="state-pill">Best odds in Prince Albert, SK</span>
+        </div>
+        <div class="state-city">Top city: Prince Albert — Santa Score 67.12</div>
+      </div>
+      <div class="metric">
+        <span class="bar" style="width:86.46%;"></span>
+        <div class="metric-inner">
+          <span class="chip prob">49.22% chance</span>
+          <span class="chip odds">Odds: +103</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Nova Scotia -->
+    <div class="row" data-rank="5">
+      <div class="rank"><span>5</span></div>
+      <div class="state">
+        <div class="state-main">
+          Nova Scotia
+          <span class="state-pill">Best odds in Cape Breton, NS</span>
+        </div>
+        <div class="state-city">Top city: Cape Breton — Santa Score 65.17</div>
+      </div>
+      <div class="metric">
+        <span class="bar" style="width:83.95%;"></span>
+        <div class="metric-inner">
+          <span class="chip prob">47.21% chance</span>
+          <span class="chip odds">Odds: +112</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Yukon -->
+    <div class="row" data-rank="6">
+      <div class="rank"><span>6</span></div>
+      <div class="state">
+        <div class="state-main">
+          Yukon
+          <span class="state-pill">Best odds in Whitehorse, YT</span>
+        </div>
+        <div class="state-city">Top city: Whitehorse — Santa Score 64.17</div>
+      </div>
+      <div class="metric">
+        <span class="bar" style="width:82.66%;"></span>
+        <div class="metric-inner">
+          <span class="chip prob">46.18% chance</span>
+          <span class="chip odds">Odds: +117</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Northwest Territories -->
+    <div class="row" data-rank="7">
+      <div class="rank"><span>7</span></div>
+      <div class="state">
+        <div class="state-main">
+          Northwest Territories
+          <span class="state-pill">Best odds in Inuvik, NT</span>
+        </div>
+        <div class="state-city">Top city: Inuvik — Santa Score 62.48</div>
+      </div>
+      <div class="metric">
+        <span class="bar" style="width:80.48%;"></span>
+        <div class="metric-inner">
+          <span class="chip prob">44.45% chance</span>
+          <span class="chip odds">Odds: +125</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Prince Edward Island -->
+    <div class="row" data-rank="8">
+      <div class="rank"><span>8</span></div>
+      <div class="state">
+        <div class="state-main">
+          Prince Edward Island
+          <span class="state-pill">Best odds in Summerside, PE</span>
+        </div>
+        <div class="state-city">Top city: Summerside — Santa Score 60.86</div>
+      </div>
+      <div class="metric">
+        <span class="bar" style="width:78.40%;"></span>
+        <div class="metric-inner">
+          <span class="chip prob">42.79% chance</span>
+          <span class="chip odds">Odds: +134</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. New Brunswick -->
+    <div class="row" data-rank="9">
+      <div class="rank"><span>9</span></div>
+      <div class="state">
+        <div class="state-main">
+          New Brunswick
+          <span class="state-pill">Best odds in Dieppe, NB</span>
+        </div>
+        <div class="state-city">Top city: Dieppe — Santa Score 59.82</div>
+      </div>
+      <div class="metric">
+        <span class="bar" style="width:77.06%;"></span>
+        <div class="metric-inner">
+          <span class="chip prob">41.72% chance</span>
+          <span class="chip odds">Odds: +140</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. Newfoundland & Labrador -->
+    <div class="row" data-rank="10">
+      <div class="rank"><span>10</span></div>
+      <div class="state">
+        <div class="state-main">
+          Newfoundland &amp; Labrador
+          <span class="state-pill">Best odds in Paradise, NL</span>
+        </div>
+        <div class="state-city">Top city: Paradise — Santa Score 52.79</div>
+      </div>
+      <div class="metric">
+        <span class="bar" style="width:68.00%;"></span>
+        <div class="metric-inner">
+          <span class="chip prob">34.50% chance</span>
+          <span class="chip odds">Odds: +190</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="csb-footer">
+    <div class="footer-inner">
+      <button id="copy-embed-btn" class="embed-btn" aria-controls="embed-wrapper" aria-expanded="false">
+        Embed this chart
+      </button>
+      <img src="https://i.postimg.cc/cCL7SsB3/canada-sports-betting.png"
+           alt="Canada Sports Betting"
+           width="120" height="auto" loading="lazy" decoding="async" />
+    </div>
+
+    <div id="embed-wrapper" class="embed-wrapper">
+      <textarea id="embed-code" readonly>&lt;iframe
+  src="https://example.com/santa-canada.html"
+  title="Top 10 Canadian Provinces &amp; Territories to Spot Santa on Christmas Eve"
+  width="100%" height="620"
+  scrolling="no"
+  style="border:0;" loading="lazy"&gt;&lt;/iframe&gt;</textarea>
+      <p id="copy-status">Embed code copied!</p>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const btn     = document.getElementById('copy-embed-btn');
+      const wrapper = document.getElementById('embed-wrapper');
+      const ta      = document.getElementById('embed-code');
+      const status  = document.getElementById('copy-status');
+
+      if (btn && wrapper && ta && status) {
+        btn.addEventListener('click', () => {
+          const isHidden = (wrapper.style.display === '' || wrapper.style.display === 'none');
+          wrapper.style.display = isHidden ? 'block' : 'none';
+          btn.setAttribute('aria-expanded', String(isHidden));
+          btn.textContent = isHidden ? 'Hide embed code' : 'Embed this chart';
+
+          if (isHidden) {
+            ta.focus();
+            ta.select();
+            try {
+              document.execCommand('copy');
+              status.style.display = 'block';
+              setTimeout(() => { status.style.display = 'none'; }, 2300);
+            } catch (e) {}
+          }
+        });
+
+        document.addEventListener('click', (e)=>{
+          const open = wrapper.style.display === 'block';
+          if (!open) return;
+          if (!wrapper.contains(e.target) && !btn.contains(e.target)) {
+            wrapper.style.display = 'none';
+            btn.setAttribute('aria-expanded','false');
+            btn.textContent = 'Embed this chart';
+          }
+        });
+
+        document.addEventListener('keydown', (e)=>{
+          if (e.key === 'Escape' && wrapper.style.display === 'block') {
+            wrapper.style.display = 'none';
+            btn.setAttribute('aria-expanded','false');
+            btn.textContent = 'Embed this chart';
+            btn.focus();
+          }
+        });
+      }
+    })();
+  </script>
+</section>
+
+</body>
+</html>
